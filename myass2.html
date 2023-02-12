@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replacement</title>
+    <link rel="stylesheet" href="myStyle/4.3.1/css/bootstrap.min.css">
+    <script src="myStyle/3.3.1/jquery.min.js"></script>
+    <script src="myStyle/1.14.7/umd/popper.min.js"></script>
+    <script src="myStyle/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/replacement.js"></script>
+    <link rel="stylesheet" href="myStyle/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="myStyle/fonts/font-awesome-4.7.0/css/font-awesome.css">
+     
+</head>
+<body onload="clearalert()">
+    <div class="container mt-5">
+       <div class="card">
+           <div class="card-header">
+               <div style="font-size: 30px;;" class="card-title text-center">ENCREPTION ENGINE</div>
+           </div>
+           <div class="card-body">
+            <div class="alert alert-danger fade show" id="error">
+                
+                <strong class="text-center"> Can't Replace an empty!</strong> Pleace you most provide all the required input fill.
+            </div>
+                <div class="row m-3">
+                    
+                    
+                        <div class="col-lg-6 ">
+                            <div class="form">
+                                <label for="ntbr">Enter Your Number</label>
+                                <input type="text"  id="number" class="form-control">
+                            </div><br>
+                            <div class="form">
+                                <label for="nctr">No. of Character to Replace</label>
+                                <input type="text" name="nctr" id="digit" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="form">
+                                <label for="position">Position</label>
+                                <select name="position" id="position" class="form-control">
+                                    <option value="">Select position to be Replace</option>
+                                    <option value="start" id="start">Start</option>
+                                    <option value="middle" id="middle">Middle</option>
+                                    <option value="end" id="end">End</option>
+                                </select>
+                            </div><br>
+                            <div class="form">
+                                <label for="ctrw">Character to Replace With</label>
+                                <input type="text" name="ctrw" id="symbol" class="form-control">
+                            </div>
+                            <br><br>
+                        <button type="button" style="float: right;"  class="btn btn-primary"  onclick="replacer()" id="mybtn">Replace</button>
+
+                        </div>
+                </div>
+                
+                <div class="card col-lg-5 offset-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Your Encrepted Number Appears Here:</h5>
+                        <p class="card-text text-center" id="display" style="font-size: large;">...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
